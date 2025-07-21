@@ -5,9 +5,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bewerbung Übersicht</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Cookie Overlay -->
+  <div id="cookie-overlay" class="cookie-overlay">
+    <div class="cookie-box">
+      <h2>🍪 Cookies</h2>
+      <p>
+        Diese Website verwendet Cookies, um Informationen über dein Nutzungsverhalten zu sammeln. Mehr dazu in der
+        <a href="https://roblox-site.github.io/Datenschutz/" target="_blank">Datenschutzerklärung</a>.
+      </p>
+      <button id="accept-cookies" class="btn btn-primary">Alle akzeptieren</button>
+    </div>
+  </div>
+
   <header class="banner">
     <img src="https://lh7-rt.googleusercontent.com/formsz/AN7BsVBxZn47caqITw9DrbP71KnsoLQfsGgBMC018gE-tPCGMJOr68PsBx-4Yh5UKr1UApn_6yOq_23cDFgpFXbQsseSYDccXVkKxw3JcRRnRCi3HNNHMG-2lMN88UZtfCH2l9dveAIm6nzYgE47drgcCgxX0Q=w1200?key=3QmP40_VvFwUowGdugqx5A" alt="Banner" />
   </header>
@@ -44,9 +57,12 @@
         Curabitur aliquet quam id dui posuere blandit. Nulla quis lorem ut libero malesuada feugiat.
       </p>
     </section>
+
+    <!-- Neuer Bewerbungs-Button -->
+    <div class="apply-button-container fade-in-up">
+      <a href="https://meinewebsite.de/bewerbung1" class="btn btn-primary">Bewerbung beginnen</a>
+    </div>
   </main>
-
-
 
   <script src="script.js"></script>
 </body>
