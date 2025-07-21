@@ -2,7 +2,12 @@
 
 /* Reset & Basis */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
 img { max-width: 100%; display: block; }
 
 /* Banner */
@@ -29,7 +34,38 @@ h1 { font-size: 2.5rem; text-align: center; margin-bottom: 1rem; }
 }
 
 /* Section Styling */
-.section { background: #fff; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+.section {
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Bewerbungs-Button Container */
+.apply-button-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.btn-primary {
+  background-color: #007BFF;
+  color: white;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+}
 
 /* Responsive */
 @media (max-width: 600px) {
@@ -40,11 +76,11 @@ h1 { font-size: 2.5rem; text-align: center; margin-bottom: 1rem; }
 /* Animation Keyframes */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 /* Initial State */
@@ -52,7 +88,6 @@ h1 { font-size: 2.5rem; text-align: center; margin-bottom: 1rem; }
 .fade-in-up {
   opacity: 0;
 }
-
 /* Active State */
 .fade-in.active {
   animation: fadeIn 0.8s ease-out forwards;
@@ -61,7 +96,10 @@ h1 { font-size: 2.5rem; text-align: center; margin-bottom: 1rem; }
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
-/* Cookie Overlay */
+/* ------------------------------ */
+/* Cookie Overlay (von Website 1) */
+/* ------------------------------ */
+
 .cookie-overlay {
   position: fixed;
   top: 0;
@@ -77,7 +115,6 @@ h1 { font-size: 2.5rem; text-align: center; margin-bottom: 1rem; }
   box-sizing: border-box;
 }
 
-/* Cookie Box unten zentriert */
 .cookie-box {
   background: #fff;
   padding: 20px 30px;
@@ -93,18 +130,27 @@ h1 { font-size: 2.5rem; text-align: center; margin-bottom: 1rem; }
   margin-top: 0;
   font-weight: 600;
 }
-
 .cookie-box p {
   font-size: 0.95rem;
   line-height: 1.5;
 }
-
 .cookie-box a {
   color: #007BFF;
   text-decoration: none;
   font-weight: 500;
 }
-
 .cookie-box a:hover {
   text-decoration: underline;
+}
+
+/* Slide-Up Animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
